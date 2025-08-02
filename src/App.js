@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Stars from './components/Stars';
+import Navbar from "./components/Navbar";  // ✅ Make sure this is imported
+import Home from "./components/Home";
+import TarotUpdates from "./components/TarotUpdates";
+import Contact from "./components/Contact";
+import PriceList from "./components/PriceList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Stars />   {/* 🌟 This will add your stars */}
+
+        <Navbar />  {/* ✅ Use your Navbar here */}
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/updates" element={<TarotUpdates />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/pricelist" element={<PriceList />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
