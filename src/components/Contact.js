@@ -26,7 +26,7 @@ function Contact() {
 
       <h3>💰 Pay me via UPI</h3>
       <p>Scan this QR code to make payments:</p>
-      <img src="/qr.jpg" alt="UPI QR Code" width="200px" />
+      <img src={`${process.env.PUBLIC_URL}/qr.jpg`} alt="UPI QR Code" width="200px" />
       <p>Or send directly to UPI ID: <strong>padmasneha7@okhdfcbank</strong></p>
     </div>
   );
