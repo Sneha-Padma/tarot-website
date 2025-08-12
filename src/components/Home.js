@@ -14,6 +14,16 @@ function Home() {
       >
         🌟 Visit My Linktree
       </a>
+
+      {/* About Me Section */}
+      <div style={{ marginTop: '3rem', padding: '1.5rem', backgroundColor: '#f9f9f9', borderRadius: '12px' }}>
+        <h2>About Me</h2>
+        <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.6' }}>
+          Hi, I'm Sneha Padma — the creator of this Tarot & Astrology platform. With a passion for intuitive guidance
+          and digital creativity, I help people explore clarity through Tarot readings, Vedic astrology, and personalized
+          spiritual insights. Whether you're seeking direction or healing energy, this platform is built to guide you.
+        </p>
+      </div>
     </div>
   );
 }
