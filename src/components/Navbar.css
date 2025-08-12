@@ -1,10 +1,15 @@
 .navbar {
-  background-color: #fff;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
+  position: fixed; /* or sticky if you prefer */
   top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent; /* no white bar */
+  box-shadow: none; /* no shadow */
+  width: 100%;
   z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
 
 .navbar-inner {
